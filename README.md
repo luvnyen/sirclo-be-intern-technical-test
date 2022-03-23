@@ -1,7 +1,7 @@
 ﻿# SIRCLO Technical Test for Software Engineer (Back End)
 
 Hello, Pak Fandy! 👋😁<br><br>
-Perkenalkan, aku <b>Calvert</b>, salah satu peserta yang mendaftar program magang sebagai <b>Software Engineer (Back End)</b> di SIRCLO. Repository ini berisi jawaban dari soal-soal yang telah diberikan sebelumnya melalui e-mail.
+Perkenalkan, aku <b>Calvert</b>, salah satu peserta yang diundang untuk mendaftar program magang sebagai <b>Software Engineer (Back End)</b> di SIRCLO. Repository ini berisi jawaban dari soal-soal yang telah diberikan sebelumnya melalui e-mail.
 
 Link dari soal:<br>
 [Programming Paradigm - Shipping Yard](https://gist.github.com/fandywie/7dab4c9914f3d37dfd336da02db9fb11)<br>
