@@ -3,6 +3,11 @@
 Hello, Pak Fandy! 👋😁<br><br>
 Perkenalkan, aku <b>Calvert</b>, salah satu peserta yang mendaftar program magang sebagai <b>Software Engineer (Back End)</b> di SIRCLO. Repository ini berisi jawaban dari soal-soal yang telah diberikan sebelumnya melalui e-mail.
 
+Link dari soal:<br>
+[Programming Paradigm - Shipping Yard](https://gist.github.com/fandywie/7dab4c9914f3d37dfd336da02db9fb11)<br>
+[Data Structure - Shopping Cart](https://gist.github.com/fandywie/12323549d2f8c202853018118b6054a7)<br>
+[BE - Berat](https://gist.github.com/fandywie/c895e83afb2faa829116696d9a09ddbe)<br>
+
 Berikut saya sertakan beberapa catatan khusus.
 
 ## 1. Programming Paradigm - Shipping Yard & 2. Data Structure - Shopping Cart
