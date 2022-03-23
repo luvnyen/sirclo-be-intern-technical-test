@@ -1,0 +1,207 @@
+Successfully added new ship with name Motor Boat 1!
+Successfully added new ship with name Motor Boat 2!
+Successfully added new ship with name Sail Boat 1!
+Successfully added new ship with name Sail Boat 2!
+Successfully added new ship with name Cruise Ship 1!
+Successfully added new ship with name Cruise Ship 2!
+
+==============================
+
+All ships info:
+
+SHIP INFORMATION
+Ship name: Motor Boat 1
+Ship max passengers: 10
+Ship weight: 100 kg
+Ship max weight: 200 kg
+Ship dock location: A
+Ship max speed: 100
+Ship max distance: 100
+
+SHIP INFORMATION
+Ship name: Motor Boat 2
+Ship max passengers: 10
+Ship weight: 100 kg
+Ship max weight: 200 kg
+Ship dock location: B
+Ship max speed: 100
+Ship max distance: 100
+
+SHIP INFORMATION
+Ship name: Sail Boat 1
+Ship max passengers: 10
+Ship weight: 100 kg
+Ship max weight: 200 kg
+Ship dock location: A
+Ship sail area: Sail Area 1
+
+SHIP INFORMATION
+Ship name: Sail Boat 2
+Ship max passengers: 10
+Ship weight: 100 kg
+Ship max weight: 200 kg
+Ship dock location: B
+Ship sail area: Sail Area 2
+
+SHIP INFORMATION
+Ship name: Cruise Ship 1
+Ship max passengers: 10
+Ship weight: 100 kg
+Ship max weight: 200 kg
+Ship dock location: C
+Ship crew members count: 10
+
+SHIP INFORMATION
+Ship name: Cruise Ship 2
+Ship max passengers: 10
+Ship weight: 100 kg
+Ship max weight: 200 kg
+Ship dock location: D
+Ship crew members count: 10
+
+==============================
+
+All ships count: 6
+
+==============================
+
+Motor boats count: 2
+Sail boats count: 2
+Cruise ships count: 2
+
+==============================
+
+All dock locations that have ships:
+- Dock location A
+- Dock location B
+- Dock location C
+- Dock location D
+
+==============================
+
+Ships count by dock location 'A': 2
+Ships count by dock location 'E': 0
+
+==============================
+
+
+All ships info by dock location A:
+
+SHIP INFORMATION
+Ship name: Motor Boat 1
+Ship max passengers: 10
+Ship weight: 100 kg
+Ship max weight: 200 kg
+Ship dock location: A
+Ship max speed: 100
+Ship max distance: 100
+
+SHIP INFORMATION
+Ship name: Sail Boat 1
+Ship max passengers: 10
+Ship weight: 100 kg
+Ship max weight: 200 kg
+Ship dock location: A
+Ship sail area: Sail Area 1
+
+All ships info by dock location E:
+There are no ships with the dock location E!
+
+==============================
+
+
+All Motor Boat info:
+
+SHIP INFORMATION
+Ship name: Motor Boat 1
+Ship max passengers: 10
+Ship weight: 100 kg
+Ship max weight: 200 kg
+Ship dock location: A
+Ship max speed: 100
+Ship max distance: 100
+
+SHIP INFORMATION
+Ship name: Motor Boat 2
+Ship max passengers: 10
+Ship weight: 100 kg
+Ship max weight: 200 kg
+Ship dock location: B
+Ship max speed: 100
+Ship max distance: 100
+
+All Sail Boat info:
+
+SHIP INFORMATION
+Ship name: Sail Boat 1
+Ship max passengers: 10
+Ship weight: 100 kg
+Ship max weight: 200 kg
+Ship dock location: A
+Ship sail area: Sail Area 1
+
+SHIP INFORMATION
+Ship name: Sail Boat 2
+Ship max passengers: 10
+Ship weight: 100 kg
+Ship max weight: 200 kg
+Ship dock location: B
+Ship sail area: Sail Area 2
+
+All Cruise Ship info:
+
+SHIP INFORMATION
+Ship name: Cruise Ship 1
+Ship max passengers: 10
+Ship weight: 100 kg
+Ship max weight: 200 kg
+Ship dock location: C
+Ship crew members count: 10
+
+SHIP INFORMATION
+Ship name: Cruise Ship 2
+Ship max passengers: 10
+Ship weight: 100 kg
+Ship max weight: 200 kg
+Ship dock location: D
+Ship crew members count: 10
+
+All Military Ship info:
+There are no ships with the type Military Ship!
+
+==============================
+
+
+Ships info by name 'Motor Boat 1':
+
+SHIP INFORMATION
+Ship name: Motor Boat 1
+Ship max passengers: 10
+Ship weight: 100 kg
+Ship max weight: 200 kg
+Ship dock location: A
+Ship max speed: 100
+Ship max distance: 100
+
+Ships info by name 'Sail Boat 3':
+There are no ships with the name Sail Boat 3 in the yard!
+
+==============================
+
+Successfully removed ship with name Motor Boat 1 from the yard!
+
+Ships info by name 'Motor Boat 1':
+There are no ships with the name Motor Boat 1 in the yard!
+There are no ships with the name Motor Boat 3 in the yard!
+
+==============================
+
+Successfully removed ships from dock location A!
+
+All ships info by dock location A:
+There are no ships with the dock location A!
+There are no ships in dock location G!
+All dock locations that have ships:
+- Dock location B
+- Dock location C
+- Dock location D

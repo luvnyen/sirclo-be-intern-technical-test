@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Berat - Halaman Utama</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.js"></script>
+</head>
+
+<body>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">Tanggal</th>
+                <th scope="col">Max</th>
+                <th scope="col">Min</th>
+                <th scope="col">Perbedaan</th>
+                <th scope="col">Detail</th>
+                <th scope="col">Action</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody"></tbody>
+    </table>
+
+    <a class='btn btn-success mx-4' href='./create.html' role='button' style='display: grid; align-items: center;'>Tambah Data Baru</a>
+
+    <script>
+        $.ajax({
+            url: 'http://localhost:8080/weight',
+            type: 'GET',
+            success: function(res) {
+                var str = "";
+                var sumMax = 0;
+                var sumMin = 0;
+
+                for (var i = 0; i < res.data.length; i++) {
+                    str += "<tr>";
+                    str += "<td>" + res.data[i].date + "</td>";
+                    str += "<td>" + res.data[i].max + "</td>";
+                    str += "<td>" + res.data[i].min + "</td>";
+                    str += "<td>" + (res.data[i].max - res.data[i].min) + "</td>";
+                    str += `
+                    <td>
+                        <a class='btn btn-primary' href='./detail.html?date=` + res.data[i].date + `' role='button'>Show</a>
+                    </td>`;
+                    str += `
+                    <td>
+                        <a class='btn btn-warning' href='./create.html?date=` + res.data[i].date + `' role='button'>Edit</a>
+                        <a class='btn btn-danger' role='button' onclick='deleteData("` + res.data[i].date + `")'>Delete</a>
+                    </td>`;
+                    str += "</tr>";
+
+                    sumMax += res.data[i].max;
+                    sumMin += res.data[i].min;
+                }
+
+                const avgMax = sumMax / res.data.length;
+                const avgMin = sumMin / res.data.length;
+
+                str += "<tr>";
+                str += "<td><b>Rata-rata</b></td>";
+                str += "<td><b>" + avgMax.toFixed(1) + "</b></td>";
+                str += "<td><b>" + avgMin.toFixed(1) + "</b></td>";
+                str += "<td colspan='3'><b>" + (avgMax - avgMin).toFixed(1) + "</b></td>";
+                str += "</tr>";
+
+                $("#tableBody").html(str);
+            },
+            error: function(err) {
+                console.log(err);
+            }
+        });
+
+        const deleteData = (date) => {
+            $.confirm({
+                icon: 'fa fa-times',
+                title: 'Penghapusan Data',
+                content: 'Apakah Anda yakin ingin menghapus data pada tanggal ' + date + '?',
+                theme: 'modern',
+                type: 'red',
+                buttons: {
+                    confirm: {
+                        text: 'Yes',
+                        btnClass: 'btn-danger',
+                        action: function() {
+                            $.ajax({
+                                url: 'http://localhost:8080/weight/' + date,
+                                type: 'DELETE',
+                                success: function(res) {
+                                    alert('Data berhasil dihapus!');
+                                    location.reload();
+                                },
+                                error: function(err) {
+                                    console.log(err);
+                                }
+                            });
+                        }
+                    },
+                    cancel: {
+                        text: 'No',
+                        btnClass: 'btn-default'
+                    }
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>
